@@ -5,6 +5,7 @@
       <AboutSection/>
       <ResumeSection/>
       <PortfolioSection/>
+      <ContactSection/>
     </v-main>
   </v-app>
 </template>
@@ -14,6 +15,7 @@ import MainComponent from './components/MainComponent';
 import AboutSection from './components/AboutSection';
 import ResumeSection from './components/ResumeSection';
 import PortfolioSection from './components/PortfolioSection';
+import ContactSection from './components/ContactSection';
 
 export default {
   name: 'App',
@@ -23,6 +25,7 @@ export default {
     AboutSection,
     ResumeSection,
     PortfolioSection,
+    ContactSection,
   },
 
   data: () => ({

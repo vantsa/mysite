@@ -2,9 +2,6 @@
   <div class="bg">
     <div class="content">
       <v-row justify="center">
-        <v-col class="line-col">
-            <div class="line"></div>
-        </v-col>
         <v-col align="center">
           <v-btn
             elevation="2"
@@ -14,9 +11,6 @@
             @click="openResume"
             >RESUME</v-btn
           >
-        </v-col>
-        <v-col class="line-col">
-            <div class="line"></div>
         </v-col>
       </v-row>
     </div>
@@ -41,15 +35,16 @@ export default {
   margin-top: -1%;
 }
 .content{
-    padding: 4% 0% 3% 0%;
-    width: 40%;
+    padding: 5% 0% 4% 0%;
+    width: 70%;
     margin: 0 auto;
+    border-bottom: 0.5rem solid white;
 }
 .resume{
   font-size: 1.8rem;
   text-decoration: none;
   font-family: 'TitilliumWeb-Bold';
-  width: 90%;
+  width: 30%;
   color: #001b3b;
   letter-spacing: 3px;
 }
