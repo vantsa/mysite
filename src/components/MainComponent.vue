@@ -67,7 +67,7 @@ export default {
   margin-top: 2%;
 }
 .icon{
-  margin: 0 3%;
+  margin: 0 3%; 
 }
 .v-icon:hover{
   transform: translateY(-4px);
@@ -90,6 +90,174 @@ export default {
   }
   50% {
     transform: translateY(-10px); /* Adjust the vertical movement */
+  }
+}
+@media screen and (max-width: 1800px){
+  .name{
+    margin-bottom: 5%;
+  }
+  .socials{
+    margin-top: 5%;
+  }
+  .arrow{
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 1400px){
+  .self:nth-child(2){
+    margin-bottom: 8%;
+  }
+  .arrow{
+    margin-bottom: 3%;
+  }
+  .socials{
+    margin-top: 5%; 
+  }
+}
+@media screen and (max-width: 1300px)
+{
+  .name{
+    margin-bottom: 10%;
+  }
+  .self{
+
+    line-height: 5rem;
+  }
+.self:nth-child(2){
+    margin-bottom: 10%;
+  }
+  .socials{
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 1200px)
+{
+  .name{
+    margin-bottom: 10%;
+  }
+  .self{
+
+    line-height: 5rem;
+  }
+.self:nth-child(3){
+    margin-bottom: 10%;
+  }
+  .socials{
+    margin-bottom: 5%;
+  }
+  .arrow{
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 1000px)
+{
+  .name{
+    margin-bottom: 10%;
+  }
+  .self{
+
+    line-height: 5rem;
+  }
+.self:nth-child(3){
+    margin-bottom: 15%;
+  }
+  .socials{
+    margin-top: 8%;
+  }
+  .arrow{
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 900px){
+  .self{
+    font-size: 7.4rem;
+    line-height: 4rem;
+  }
+  .name{
+    padding-left: 5%;
+    padding-top: 8%;
+    padding-bottom: 6%;
+  }
+  .self:nth-child(3){
+    margin-bottom: 20%;
+  }
+  .socials{
+    margin-top: 8%;
+  }
+  .arrow{
+    margin-top:2%;
+    margin-bottom: 8%;
+  }
+}
+@media screen and (max-width: 800px){
+  .socials{
+    margin-top:12%;
+    margin-bottom: 10%;
+  }
+}
+@media screen and (max-width: 728px){
+  .self{
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+  .name{
+    margin-top: 10%;
+    font-size: 1rem;
+    letter-spacing: 1rem;
+    line-height: 2rem;
+  }
+  .socials{
+    margin-top: 13%;
+  }
+}
+@media screen and (max-width: 600px){
+  .name{
+    margin-top: 1%;
+    margin-bottom: 25%;
+    line-height: 2.5rem;
+  }
+  .self{
+    font-size: 4.9rem;
+    line-height: 4.5rem;
+  }
+  .self:nth-child(3){
+    margin-bottom: 30%;
+  }
+  .arrow{
+    margin-top: 5%;
+  }
+  .socials{
+    margin-top: 18%;
+  }
+}
+@media screen and (max-width: 500px){
+  .self{
+    font-size: 4.4rem;
+    line-height: 4.5rem;
+  }
+  .name{
+    margin-top: 17%;
+    padding-left: 0%;
+    letter-spacing: 0.7rem;
+  }
+  .self:nth-child(3){
+    margin-bottom: 40%;
+  }
+  .arrow{
+    margin-bottom: 20%;
+  }
+}
+@media screen and (max-width: 400px){
+  .self{
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .icon{
+    padding: 10%;
+  }
+  .arrow{
+    margin-top: 15%;
+    margin-bottom: 25%;
   }
 }
 </style>
