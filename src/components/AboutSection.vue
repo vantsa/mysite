@@ -43,7 +43,7 @@
         </div>
         </div>
       </v-col>
-      <v-col cols="12" md="6" sm="12" align="center">
+      <v-col cols="12" md="6" sm="12" align-self="center" align="center">
         <img src="../assets/vantsa.png" />
       </v-col>
     </v-row>
