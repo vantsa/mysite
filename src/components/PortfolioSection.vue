@@ -1,28 +1,31 @@
 <template>
   <div class="bg">
     <div class="content">
-      <h4>CHECK OUT MY PROJECTS</h4>
-      <h4 class="st">ON GITHUB</h4>
-      <v-row justify="center">
-        <v-col align="center" @click="openWL">
-          <div class="box">
-            <img src="../assets/wl.jpg" />
-            <p><strong>Weekend Lake Festival</strong><br />(HTML, CSS, JS)</p>
-          </div>
-        </v-col>
-        <v-col align="center" @click="openLE">
-          <div class="box">
-            <img src="../assets/le.png" />
-            <p><strong>Final Project</strong><br />(Vue.js, ASP .NET Core)</p>
-          </div>
-        </v-col>
-        <v-col align="center" @click="openWS">
-          <div class="box">
-            <img src="../assets/ws.png" />
-            <p><strong>Grocery store</strong><br />(Vue.js, PHP)</p>
-          </div>
-        </v-col>
-      </v-row>
+      <div class="slide-in-container" ref="slideInContainer">
+        <h4>CHECK OUT MY PROJECTS</h4>
+        <h4 class="st">ON GITHUB</h4>
+        
+        <v-row justify="center">
+          <v-col align="center" @click="openWL">
+            <div class="box">
+              <img src="../assets/wl.jpg" />
+              <p><strong>Weekend Lake Festival</strong><br />(HTML, CSS, JS)</p>
+            </div>
+          </v-col>
+          <v-col align="center" @click="openLE">
+            <div class="box">
+              <img src="../assets/le.png" />
+              <p><strong>Final Project</strong><br />(Vue.js, ASP .NET Core)</p>
+            </div>
+          </v-col>
+          <v-col align="center" @click="openWS">
+            <div class="box">
+              <img src="../assets/ws.png" />
+              <p><strong>Grocery store</strong><br />(Vue.js, PHP)</p>
+            </div>
+          </v-col>
+        </v-row>
+        </div>
     </div>
   </div>
 </template>
@@ -30,7 +33,24 @@
 <script>
 export default {
   name: "PortfolioSection",
+  mounted() {
+    window.addEventListener("scroll", this.checkSlide);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.checkSlide);
+  },
   methods: {
+    checkSlide() {
+      const slideInContainer = this.$refs.slideInContainer;
+      const slideInTop = slideInContainer.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (slideInTop < windowHeight) {
+        slideInContainer.classList.add("show");
+      } else {
+        slideInContainer.classList.remove("show");
+      }
+    },
     openWL() {
       window.open(
         "https://github.com/vantsa/Weekend-Lake-Festival-first-template"
@@ -95,5 +115,14 @@ p {
 .box:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+.slide-in-container {
+  opacity: 0;
+  transform: translateY(20%); 
+  transition: opacity 1.5s ease, transform 1.5s ease; 
+}
+.slide-in-container.show {
+  opacity: 1; 
+  transform: translateY(0); 
 }
 </style>

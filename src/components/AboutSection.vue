@@ -1,7 +1,8 @@
 <template>
   <div class="main">
-    <v-row>
+    <v-row> 
       <v-col cols="6">
+        <div class="slide-in-container" ref="slideInContainer">
         <h3>About</h3>
         <div class="abouttext">
           <p>
@@ -40,6 +41,7 @@
           </p>
           <p class="signature">Vantsa</p>
         </div>
+        </div>
       </v-col>
       <v-col cols="6">
         <img src="../assets/vantsa.png" />
@@ -51,6 +53,25 @@
 <script>
 export default {
   name: "AboutSection",
+   mounted() {
+    window.addEventListener('scroll', this.checkSlide);
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.checkSlide);
+  },
+  methods: {
+    checkSlide() {
+      const slideInContainer = this.$refs.slideInContainer;
+      const slideInTop = slideInContainer.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (slideInTop < windowHeight) {
+        slideInContainer.classList.add('show');
+      } else {
+        slideInContainer.classList.remove('show');
+      }
+    }
+  }
 };
 </script>
 
@@ -91,5 +112,14 @@ p::first-letter{
   padding-top: 10%;
   font-style: italic;
 }
+.slide-in-container {
+  opacity: 0;
+  transform: translateY(20%); 
+  transition: opacity 1.5s ease, transform 1.5s ease; 
+}
 
+.slide-in-container.show {
+  opacity: 1; 
+  transform: translateY(0); 
+}
 </style>

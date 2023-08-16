@@ -5,49 +5,51 @@
         <img src="../assets/lang.png" />
       </v-col>
       <v-col cols="6">
-        <h3>Get in touch</h3>
-        <div class="abouttext">
-          <v-card elevation="24">
-            <v-form @submit.prevent="submitForm">
-              <v-text-field
-                v-model="name"
-                label="Name"
-                :rules="nameRules"
-                required
-              ></v-text-field>
-              <v-text-field
-                v-model="email"
-                label="Email"
-                :rules="emailRules"
-                required
-              ></v-text-field>
-              <v-textarea
-                v-model="message"
-                label="Message"
-                :rules="messageRules"
-                required
-              ></v-textarea>
-              <v-btn
-                elevation="2"
-                rounded
-                x-large
-                color="#001b3b"
-                class="resume"
-                type="submit"
-                >Send</v-btn
-              >
-            </v-form>
-          </v-card>
-          <h4>OR VIA</h4>
-          <v-row justify="center">
-            <v-col class="icon" cols="auto">
-              <a
-                href="https://www.linkedin.com/in/v%C3%A1ntsa-alp%C3%A1r-a6705a1b3/"
-                target="_blank"
-                ><v-icon size="4rem" color="#001b3b">mdi-linkedin</v-icon></a
-              >
-            </v-col>
-          </v-row>
+        <div class="slide-in-container" ref="slideInContainer">
+          <h3>Get in touch</h3>
+          <div class="abouttext">
+            <v-card elevation="24">
+              <v-form @submit.prevent="submitForm">
+                <v-text-field
+                  v-model="name"
+                  label="Name"
+                  :rules="nameRules"
+                  required
+                ></v-text-field>
+                <v-text-field
+                  v-model="email"
+                  label="Email"
+                  :rules="emailRules"
+                  required
+                ></v-text-field>
+                <v-textarea
+                  v-model="message"
+                  label="Message"
+                  :rules="messageRules"
+                  required
+                ></v-textarea>
+                <v-btn
+                  elevation="2"
+                  rounded
+                  x-large
+                  color="#001b3b"
+                  class="resume"
+                  type="submit"
+                  >Send</v-btn
+                >
+              </v-form>
+            </v-card>
+            <h4>OR VIA</h4>
+            <v-row justify="center">
+              <v-col class="icon" cols="auto">
+                <a
+                  href="https://www.linkedin.com/in/v%C3%A1ntsa-alp%C3%A1r-a6705a1b3/"
+                  target="_blank"
+                  ><v-icon size="4rem" color="#001b3b">mdi-linkedin</v-icon></a
+                >
+              </v-col>
+            </v-row>
+          </div>
         </div>
       </v-col>
     </v-row>
@@ -112,6 +114,23 @@ export default {
         this.successMsg = "";
       }
     },
+    checkSlide() {
+      const slideInContainer = this.$refs.slideInContainer;
+      const slideInTop = slideInContainer.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (slideInTop < windowHeight) {
+        slideInContainer.classList.add("show");
+      } else {
+        slideInContainer.classList.remove("show");
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.checkSlide);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.checkSlide);
   },
 };
 </script>
@@ -172,10 +191,10 @@ h4 {
   font-size: 2rem;
   letter-spacing: 3px;
 }
-.icon{
-    padding: 5%;
+.icon {
+  padding: 5%;
 }
-.v-icon:hover{
+.v-icon:hover {
   transform: translateY(-4px);
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
 }
@@ -186,5 +205,15 @@ h4 {
   transform: translateX(-50%);
   z-index: 9999;
   width: 40%;
+}
+.slide-in-container {
+  opacity: 0;
+  transform: translateY(20%);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.slide-in-container.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>
