@@ -51,7 +51,6 @@ export default {
 .bg {
   width: 100%;
   background-color: #001b3b;
-  margin-top: -1%;
 }
 .content{
     padding: 5% 0% 4% 0%;
