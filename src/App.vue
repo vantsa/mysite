@@ -1,12 +1,12 @@
 <template>
   <v-app>
     <v-main>
-      <MainComponent/>
+      <!-- <MainComponent/> -->
       <AboutSection/>
-      <ResumeSection/>
+      <!-- <ResumeSection/>
       <PortfolioSection/>
       <ContactSection/>
-      <FooterSection/>
+      <FooterSection/> -->
     </v-main>
   </v-app>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <v-row> 
-      <v-col cols="6">
+      <v-col cols="12" md="6" sm="12">
         <div class="slide-in-container" ref="slideInContainer">
         <h3>About</h3>
         <div class="abouttext">
@@ -43,7 +43,7 @@
         </div>
         </div>
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" md="6" sm="12" align="center">
         <img src="../assets/vantsa.png" />
       </v-col>
     </v-row>
@@ -121,5 +121,21 @@ p::first-letter{
 .slide-in-container.show {
   opacity: 1; 
   transform: translateY(0); 
+}
+@media screen and (max-width: 960px){
+  .signature{
+    margin-bottom: 10%;
+  }
+  img{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px){
+  h3{
+    font-size:4rem;
+  }
+  p{
+    font-size: 0.9rem;
+  }
 }
 </style>
