@@ -3,8 +3,8 @@
     <v-main>
       <MainComponent/>
       <AboutSection/>
-      <!-- <ResumeSection/>
-      <PortfolioSection/>
+      <ResumeSection/>
+      <!--<PortfolioSection/>
       <ContactSection/>
       <FooterSection/> -->
     </v-main>

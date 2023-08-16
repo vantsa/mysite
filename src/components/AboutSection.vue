@@ -129,6 +129,9 @@ p::first-letter{
   img{
     width: 80%;
   }
+  .abouttext{
+    width: 85%;
+  }
 }
 @media screen and (max-width: 600px){
   h3{

@@ -1,7 +1,7 @@
 <template>
   <div class="bg">
     <div class="content">
-      <div class="slide-in-container" ref="slideInContainer">
+      <div  class="slide-in-container" ref="slideInContainer">
       <v-row justify="center">
         <v-col align="center">
           <v-btn
@@ -65,18 +65,7 @@ export default {
   font-family: 'TitilliumWeb-Bold';
   width: 30%;
   color: #001b3b;
-  letter-spacing: 3px;
-}
-.line-col{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 25%;
-}
-.line{
-    background-color: red;
-    height: 5px;
-    border-radius: 50px;
+  letter-spacing: 4px;
 }
 .v-btn:hover {
   transform: translateY(-4px);
@@ -91,5 +80,29 @@ export default {
 .slide-in-container.show {
   opacity: 1; 
   transform: translateY(0); 
+}
+@media screen and (max-width: 768px){
+  .resume{
+    font-size: 1.5rem;
+    width: 40%;
+  }
+  .content{
+    border-bottom: 0.3rem solid white;
+    padding: 7% 0% 6% 0%;
+  }
+}
+@media screen and (max-width: 580px){
+  .resume{
+    width: 60%;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 390px)
+{
+ .resume{
+  
+    width: 80%;
+    font-size: 1.1rem;
+  }
 }
 </style>
