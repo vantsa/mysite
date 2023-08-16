@@ -4,8 +4,8 @@
       <MainComponent/>
       <AboutSection/>
       <ResumeSection/>
-      <!--<PortfolioSection/>
-      <ContactSection/>
+      <PortfolioSection/>
+      <!-- <ContactSection/>
       <FooterSection/> -->
     </v-main>
   </v-app>
@@ -39,6 +39,9 @@ export default {
 
 
 <style scoped>
+html, body {
+  overflow-x: hidden;
+}
 @font-face {
   font-family: "TitilliumWeb-Regular";
   src: local("TitilliumWeb-Regular"),

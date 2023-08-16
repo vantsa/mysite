@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <v-row> 
+    <v-row no-gutters> 
       <v-col cols="12" md="6" sm="12">
         <div class="slide-in-container" ref="slideInContainer">
         <h3>About</h3>

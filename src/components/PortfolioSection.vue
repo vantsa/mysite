@@ -1,24 +1,24 @@
 <template>
   <div class="bg">
     <div class="content">
-      <div class="slide-in-container" ref="slideInContainer">
+      <div  class="slide-in-container" ref="slideInContainer">
         <h4>CHECK OUT MY PROJECTS</h4>
         <h4 class="st">ON GITHUB</h4>
         
-        <v-row justify="center">
-          <v-col align="center" @click="openWL">
+        <v-row justify="center" no-gutters>
+          <v-col cols="12" md="4" sm="6" align="center" @click="openWL">
             <div class="box">
               <img src="../assets/wl.jpg" />
               <p><strong>Weekend Lake Festival</strong><br />(HTML, CSS, JS)</p>
             </div>
           </v-col>
-          <v-col align="center" @click="openLE">
+          <v-col cols="12" md="4" sm="6" align="center" @click="openLE">
             <div class="box">
               <img src="../assets/le.png" />
               <p><strong>Final Project</strong><br />(Vue.js, ASP .NET Core)</p>
             </div>
           </v-col>
-          <v-col align="center" @click="openWS">
+          <v-col cols="12" md="4" sm="6" align="center" @click="openWS">
             <div class="box">
               <img src="../assets/ws.png" />
               <p><strong>Grocery store</strong><br />(Vue.js, PHP)</p>
@@ -101,7 +101,7 @@ h4 {
   letter-spacing: 1rem;
 }
 img {
-  width: 104%;
+  width: 100%;
   height: auto;
 }
 p {
@@ -124,5 +124,37 @@ p {
 .slide-in-container.show {
   opacity: 1; 
   transform: translateY(0); 
+}
+@media screen and (max-width: 768px){
+  p{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 650px){
+  h4{
+    font-size: 2rem;
+  }
+  .st{
+    font-size: 0.8rem;
+    letter-spacing: 0.6rem;
+  }
+  p{
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 600px){
+  img{
+    width: 60%;
+  }
+}
+@media screen and (max-width: 500px){
+  h4{
+    font-size: 1.5rem;
+    padding-bottom: 5%;
+  }
+  .st{
+    font-size: 0.6rem;
+    padding-bottom: 10%;
+  }
 }
 </style>
