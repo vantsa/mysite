@@ -1,7 +1,7 @@
 <template>
     <div class="bg">
         <div class="content">
-            <v-row>
+            <v-row no-gutters>
                 <v-col class="center">
                     <h4>Copyright ©2023<br>All rights reserved.</h4>
                 </v-col>
@@ -25,8 +25,6 @@ export default {
 <style scoped>
 .bg{
     background-color: #001b3b;
-
-    margin-top: -1%;
 }
 .content{
     width: 70%;
@@ -54,5 +52,18 @@ p{
     line-height: 10px;
     letter-spacing: 1px;
     text-align: center;
+}
+@media screen and (max-width: 768px){
+    h4{
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+    p{
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+    .content{
+        width: 90%;
+    }
 }
 </style>
