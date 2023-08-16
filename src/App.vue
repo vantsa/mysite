@@ -3,6 +3,8 @@
     <v-main>
       <MainComponent/>
       <AboutSection/>
+      <ResumeSection/>
+      <PortfolioSection/>
     </v-main>
   </v-app>
 </template>
@@ -10,6 +12,8 @@
 <script>
 import MainComponent from './components/MainComponent';
 import AboutSection from './components/AboutSection';
+import ResumeSection from './components/ResumeSection';
+import PortfolioSection from './components/PortfolioSection';
 
 export default {
   name: 'App',
@@ -17,6 +21,8 @@ export default {
   components: {
     MainComponent,
     AboutSection,
+    ResumeSection,
+    PortfolioSection,
   },
 
   data: () => ({
@@ -41,5 +47,10 @@ export default {
   font-family: "TitilliumWeb-Bold";
   src: local("TitilliumWeb-Bold"),
    url(assets/fonts/TitilliumWeb-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "TitilliumWeb-Light";
+  src: local("TitilliumWeb-Light"),
+   url(assets/fonts/TitilliumWeb-Light.ttf) format("truetype");
 }
 </style>

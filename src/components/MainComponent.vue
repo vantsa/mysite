@@ -16,6 +16,9 @@
         <a href="https://github.com/vantsa" target="_blank"><v-icon size="40px" color= "#EEE1C6">mdi-github</v-icon></a>
       </v-col>
     </v-row>
+    <div class="scroll">
+    <v-icon class="arrow" size="4rem" color= "white">mdi-chevron-down</v-icon>
+    </div>
   </div>
 </template>
 
@@ -41,7 +44,6 @@ export default {
 .socials{
   margin: 0 auto;
   width: 60%;
-  padding-bottom: 12%;
 }
 .name {
   font-family: TitilliumWeb-Regular;
@@ -70,6 +72,25 @@ export default {
 .v-icon:hover{
   transform: translateY(-4px);
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+}
+.arrow{
+  animation: pulseAnimation 2s infinite;
+}
+.scroll{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2%;
+  padding-top: 6%;
+}
+@keyframes pulseAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the vertical movement */
+  }
 }
 </style>
 

@@ -71,7 +71,8 @@ h3 {
 }
 img{
   width: 100%;
-  box-shadow: 0px 45px 65px 0px rgba(0, 0, 0, 0.74);
+  box-shadow: -20px 0px 65px 0px rgba(0, 0, 0, 0.74);
+;
 }
 p{
   text-align: justify;
