@@ -1,10 +1,10 @@
 <template>
   <div class="main">
-    <v-row>
-      <v-col cols="6">
+    <v-row no-gutters>
+      <v-col cols="12" md="6" sm="12" align-self="center" align="center">
         <img src="../assets/lang.png" />
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" md="6" sm="12">
         <div class="slide-in-container" ref="slideInContainer">
           <h3>Get in touch</h3>
           <div class="abouttext">
@@ -146,23 +146,9 @@ h3 {
   padding: 5%;
   color: #001b3b;
 }
-.abouttext {
-  width: 70%;
-  margin: 0 auto;
-}
 img {
   width: 100%;
   box-shadow: 20px 0px 65px 0px rgba(0, 0, 0, 0.74);
-}
-p {
-  text-align: justify;
-  margin-top: -2%;
-  line-height: 1.8rem;
-  font-family: TitilliumWeb-Regular;
-  font-weight: 600;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  color: #001b3b;
 }
 .resume {
   font-size: 1.3rem;
@@ -215,5 +201,42 @@ h4 {
 .slide-in-container.show {
   opacity: 1;
   transform: translateY(0);
+}
+@media screen and (max-width: 1366px){
+  h3{
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 960px){
+  img{
+    display: none;
+  }
+}
+@media screen and (max-width: 560px)
+{
+  h3{
+    font-size: 3rem;
+    padding: 15%;
+  }
+  h4{
+    font-size: 1.5rem;
+    padding: 10%;
+    padding-bottom: 5%;
+  }
+  .resume{
+    font-size: 1rem;
+  }
+  .v-card{
+    padding: 3rem 1rem 3rem 1rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .v-form{
+    padding: 3rem 1rem 7rem 1rem;
+  }
+  .icon{
+    padding: 10%;
+    margin-bottom: 20%;
+  }
 }
 </style>

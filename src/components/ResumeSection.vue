@@ -87,7 +87,7 @@ export default {
   }
   .content{
     border-bottom: 0.3rem solid white;
-    padding: 7% 0% 6% 0%;
+    padding: 10% 0% 9% 0%;
   }
 }
 @media screen and (max-width: 580px){

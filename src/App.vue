@@ -5,8 +5,8 @@
       <AboutSection/>
       <ResumeSection/>
       <PortfolioSection/>
-      <!-- <ContactSection/>
-      <FooterSection/> -->
+      <ContactSection/>
+      <FooterSection/>
     </v-main>
   </v-app>
 </template>

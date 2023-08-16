@@ -75,7 +75,7 @@ export default {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 7%;
-  padding-top: 5%;
+  padding-top: 3%;
 }
 .box {
   transition: transform 1s ease;
