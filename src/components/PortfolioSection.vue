@@ -60,7 +60,7 @@ export default {
       window.open("https://github.com/vantsa/allamvizsga");
     },
     openWS() {
-      window.open("https://github.com/istiballo/webprog_frontend_final");
+      window.open("https://github.com/vantsa/webshop_final_api");
     },
   },
 };
