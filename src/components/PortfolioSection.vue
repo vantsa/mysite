@@ -24,6 +24,12 @@
               <p><strong>Grocery store</strong><br />(Vue.js, PHP)</p>
             </div>
           </v-col>
+          <v-col cols="12" md="4" sm="6" align="center">
+            <div class="box">
+              <img class="wff" src="../assets/logo.png" />
+              <p><strong>GYM Ticket System</strong><br />(Vue.js, Firestore) ~private~</p>
+            </div>
+          </v-col>
         </v-row>
         </div>
     </div>
@@ -102,6 +108,10 @@ h4 {
 }
 img {
   width: 100%;
+  height: auto;
+}
+.wff{
+  width: 40%;
   height: auto;
 }
 p {

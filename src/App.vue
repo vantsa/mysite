@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <v-main>
+      <div v-if="loading"><LoadingScreen /></div>
       <MainComponent/>
       <AboutSection/>
       <ResumeSection/>
@@ -18,6 +19,7 @@ import ResumeSection from './components/ResumeSection';
 import PortfolioSection from './components/PortfolioSection';
 import ContactSection from './components/ContactSection';
 import FooterSection from './components/FooterSection';
+import LoadingScreen from './components/LoadingScreen';
 
 export default {
   name: 'App',
@@ -29,11 +31,20 @@ export default {
     PortfolioSection,
     ContactSection,
     FooterSection,
+    LoadingScreen
   },
 
-  data: () => ({
-    //
-  }),
+  data() {
+    return{
+      loading: true,
+    }
+  },
+  mounted() {
+      setTimeout(() => {
+      this.loading = false;
+    }, 3000);
+  },
+
 };
 </script>
 
