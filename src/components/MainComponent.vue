@@ -31,7 +31,7 @@ export default {
 <style scoped>
 .bg {
   width: 100%;
-  background-image: url("../assets/bg.png");
+  background-image: url("../assets/bg.jpg");
   background-size: cover;
   background-position: center center;
 }
