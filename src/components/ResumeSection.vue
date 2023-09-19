@@ -41,7 +41,7 @@ export default {
       }
     },
     openResume(){
-      window.open("https://drive.google.com/file/d/1OoZJ45DPw-XmVcBCpri3cklcbuv-VCE1/view?usp=sharing")
+      window.open("https://drive.google.com/file/d/1cJUaCl5COkbWpBWZ8-Jwbk4xpeOGzU_8/view?usp=sharing")
     }
   }
 };
