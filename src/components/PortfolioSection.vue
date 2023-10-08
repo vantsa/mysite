@@ -169,6 +169,9 @@ p {
   img{
     width: 60%;
   }
+  .aoc{
+    width: 60%;
+  }
 }
 @media screen and (max-width: 500px){
   h4{
