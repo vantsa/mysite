@@ -20,7 +20,7 @@
           </p>
           <p>
             I am enthusiastic about the possibility of
-            <strong>relocating to Budapest</strong> for work opportunities. I am
+            <strong>relocating</strong> for work opportunities. I am
             committed to personal growth and believe that stepping out of my
             comfort zone is essential for professional development. I thrive in
             collaborative environments and enjoy working as part of a team to
