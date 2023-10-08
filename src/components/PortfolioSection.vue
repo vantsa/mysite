@@ -30,6 +30,12 @@
               <p><strong>GYM Ticket System</strong><br />(Vue.js, Firestore) ~private~</p>
             </div>
           </v-col>
+          <v-col cols="12" md="4" sm="6" align="center" @click="openAOC">
+            <div class="box">
+              <img class="aoc" src="../assets/aoc.jpg" />
+              <p><strong>Advent Of Code 2022 </strong><br />JavaScript (in progress)</p>
+            </div>
+          </v-col>
         </v-row>
         </div>
     </div>
@@ -68,6 +74,9 @@ export default {
     openWS() {
       window.open("https://github.com/vantsa/webshop_final_api");
     },
+    openAOC() {
+      window.open("https://github.com/vantsa/adventofcode22.git");
+    }
   },
 };
 </script>
@@ -109,6 +118,10 @@ h4 {
 img {
   width: 100%;
   height: auto;
+}
+.aoc{
+  height: auto;
+  width: 90%;
 }
 .wff{
   width: 40%;
