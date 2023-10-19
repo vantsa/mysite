@@ -24,7 +24,7 @@
               <p><strong>Grocery store</strong><br />(Vue.js, PHP)</p>
             </div>
           </v-col>
-          <v-col cols="12" md="4" sm="6" align="center">
+          <v-col cols="12" md="4" sm="6" align="center" @click="openWFF">
             <div class="box">
               <img class="wff" src="../assets/logo.png" />
               <p><strong>GYM Ticket System</strong><br />(Vue.js, Firestore) ~private~</p>
@@ -76,6 +76,9 @@ export default {
     },
     openAOC() {
       window.open("https://github.com/vantsa/adventofcode22.git");
+    },
+    openWFF() {
+      window.open("https://github.com/vantsa/warriorff");
     }
   },
 };
