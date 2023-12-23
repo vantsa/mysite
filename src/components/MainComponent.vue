@@ -296,6 +296,9 @@ export default {
     margin-top: 12%;
     margin-bottom: 10%;
   }
+  .self2{
+    margin-left: 8%;
+  }
 }
 
 @media screen and (max-width: 728px) {
@@ -331,7 +334,7 @@ export default {
     line-height: 4.5rem;
   }
   .self2{
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .self:nth-child(3) {
@@ -353,7 +356,7 @@ export default {
     line-height: 4.5rem;
   }
   .self2{
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   .name {
@@ -377,7 +380,7 @@ export default {
     line-height: 3rem;
   }
   .self2{
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .icon {
