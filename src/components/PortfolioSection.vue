@@ -37,6 +37,13 @@
               <p><strong>Advent Of Code 2022 </strong><br />JavaScript (in progress)</p>
             </div>
           </v-col>
+          <v-col cols="12" md="4" sm="6" align="center" @click="openMMM">
+            <div class="box">
+              <img class="mmm" src="../assets/mm.png" />
+              <p><strong>My Money Mate </strong><br />React.js</p>
+            </div>
+          </v-col>
+          
         </v-row>
         </div>
     </div>
@@ -80,6 +87,9 @@ export default {
     },
     openWFF() {
       window.open("https://github.com/vantsa/warriorff");
+    },
+    openMMM() {
+      window.open("https://vantsa-budget.netlify.app/");
     }
   },
 };
@@ -142,6 +152,10 @@ img {
   width: 40%;
   height: auto;
 }
+.mmm{
+  height: auto;
+  width: 87%;
+}
 p {
   color: #ede7dc;
   text-align: center;
@@ -186,6 +200,9 @@ p {
   }
   .aoc{
     width: 60%;
+  }
+  .mmm{
+    width: 62%;
   }
 }
 @media screen and (max-width: 500px){
