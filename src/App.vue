@@ -1,5 +1,5 @@
 <template>
-  <v-app no-gutters>
+  <v-app>
     <v-main>
       <div v-if="loading"><LoadingScreen /></div>
       <MainComponent/>
