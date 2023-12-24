@@ -135,7 +135,7 @@ p::first-letter{
 }
 @media screen and (max-width: 600px){
   h3{
-    font-size:4rem;
+    font-size: 4rem;
   }
   p{
     font-size: 0.9rem;

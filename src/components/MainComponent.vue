@@ -15,7 +15,6 @@
         <span>A</span>
         <span>Y</span>
         <span>S</span>
-        <span>🎄</span>
       </p>
       <p class="name">JUNIOR SOFTWARE DEVELOPER</p>
       <p class="self">VÁNTSA</p>
@@ -92,16 +91,13 @@ export default {
 }
 
 .self2 span:nth-child(even) {
-  animation: shaky1 2s infinite alternate;
+  animation: shaky1 4s infinite alternate;
 }
 
 .self2 span:nth-child(odd) {
-  animation: shaky2 2s infinite alternate;
+  animation: shaky2 4s infinite alternate;
 }
 
-.self2 .h{
-  margin-left: 13%;
-}
 .self2 {
   margin-top: -18%;
   font-family: TitilliumWeb-Black !important;
@@ -184,8 +180,8 @@ export default {
 }
 
 @media screen and (max-width: 1400px) {
-  .self:nth-child(2) {
-    margin-bottom: 8%;
+  .self:nth-child(3) {
+    margin-bottom: 15%;
   }
 
   .arrow {
@@ -201,16 +197,10 @@ export default {
   .name {
     margin-bottom: 10%;
   }
-
   .self {
-
     line-height: 5rem;
-  }
-
-  .self:nth-child(2) {
     margin-bottom: 10%;
   }
-
   .socials {
     margin-bottom: 5%;
   }
@@ -226,7 +216,7 @@ export default {
     line-height: 5rem;
   }
 
-  .self:nth-child(3) {
+  .self:nth-child(4) {
     margin-bottom: 10%;
   }
 
@@ -245,11 +235,13 @@ export default {
   }
 
   .self {
-
     line-height: 5rem;
   }
+  .self2{
+    font-size: 5.8rem;
+  }
 
-  .self:nth-child(3) {
+  .self:nth-child(4) {
     margin-bottom: 15%;
   }
 
@@ -269,7 +261,7 @@ export default {
   }
 
   .self2 {
-    font-size: 5rem;
+    font-size: 4.4rem;
   }
   .name {
     padding-left: 5%;
@@ -277,7 +269,7 @@ export default {
     padding-bottom: 6%;
   }
 
-  .self:nth-child(3) {
+  .self:nth-child(4) {
     margin-bottom: 20%;
   }
 
@@ -297,7 +289,9 @@ export default {
     margin-bottom: 10%;
   }
   .self2{
+    font-size: 4.8rem;
     margin-left: 8%;
+    letter-spacing: 2px;
   }
 }
 
@@ -307,7 +301,7 @@ export default {
     line-height: 5rem;
   }
   .self2 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 
   .name {
@@ -335,9 +329,10 @@ export default {
   }
   .self2{
     font-size: 3rem;
+    letter-spacing: 3px;
   }
 
-  .self:nth-child(3) {
+  .self:nth-child(4) {
     margin-bottom: 30%;
   }
 
@@ -356,7 +351,7 @@ export default {
     line-height: 4.5rem;
   }
   .self2{
-    font-size: 2.75rem;
+    font-size: 2.35rem;
   }
 
   .name {
@@ -365,7 +360,7 @@ export default {
     letter-spacing: 0.7rem;
   }
 
-  .self:nth-child(3) {
+  .self:nth-child(4) {
     margin-bottom: 40%;
   }
 
@@ -380,7 +375,7 @@ export default {
     line-height: 3rem;
   }
   .self2{
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 
   .icon {

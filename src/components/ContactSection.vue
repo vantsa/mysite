@@ -165,6 +165,10 @@ img {
   padding: 2rem;
   padding-bottom: 7rem;
 }
+.v-card{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .v-btn:hover {
   transform: translateY(-4px);
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
