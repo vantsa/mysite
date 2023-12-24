@@ -8,6 +8,7 @@
             elevation="2"
             rounded
             x-large
+            color="#034f20"
             class="resume"
             @click="openResume"
             >RESUME</v-btn
@@ -50,7 +51,7 @@ export default {
 <style scoped>
 .bg {
   width: 100%;
-  background-color: #001b3b;
+  background-color: #ede7dc;
 }
 .content{
     padding: 5% 0% 4% 0%;
@@ -63,7 +64,7 @@ export default {
   text-decoration: none;
   font-family: 'TitilliumWeb-Bold';
   width: 30%;
-  color: #001b3b;
+  color: #ede7dc;
   letter-spacing: 4px;
 }
 .v-btn:hover {

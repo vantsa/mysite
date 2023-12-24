@@ -1,5 +1,6 @@
 <template>
   <div class="bg">
+    <v-img class="lights" src="../assets/lights.png"/>
     <div class="content">
       <div  class="slide-in-container" ref="slideInContainer">
         <h4>CHECK OUT MY PROJECTS</h4>
@@ -87,13 +88,20 @@ export default {
 <style scoped>
 .bg {
   width: 100%;
-  background-color: #001b3b;
+  background-color: #034f20;
+  position:relative;
 }
 .content {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 7%;
   padding-top: 3%;
+}
+.lights{
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  mask-image: linear-gradient(to top, transparent,   rgba(0, 0, 0, 0.9)); /* Apply a gradient mask */
 }
 .box {
   transition: transform 1s ease;
@@ -102,14 +110,18 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position:relative;
+  z-index: 2;
 }
 h4 {
-  color: white;
+  color: #ede7dc;
   font-family: Titilliumweb-Black;
   letter-spacing: 5px;
   font-size: 2.5rem;
   text-align: center;
   padding-top: 6%;
+  position: relative;
+  z-index: 2;
 }
 .st {
   padding-top: 0.5%;
@@ -131,7 +143,7 @@ img {
   height: auto;
 }
 p {
-  color: white;
+  color: #ede7dc;
   text-align: center;
   font-family: TitilliumWeb-Light;
   letter-spacing: 4px;
