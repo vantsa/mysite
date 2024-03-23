@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
 .bg{
-    background-color: #034f20;
+    background-color: #001b3b;
 }
 .content{
     width: 70%;
@@ -32,7 +32,7 @@ export default {
     padding: 2%;
 }
 h4{
-    color: #ede7dc;
+    color: white;
     font-family: TitilliumWeb-Bold;
         text-align: center;
         font-size: 1.5rem;
@@ -47,7 +47,7 @@ h4{
     justify-content: center;
 }
 p{
-    color: #ede7dc;
+    color: white;
     font-family: TitilliumWeb-Regular;
     line-height: 10px;
     letter-spacing: 1px;

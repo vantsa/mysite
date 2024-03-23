@@ -32,7 +32,7 @@
                   elevation="2"
                   rounded
                   x-large
-                  color="#034f20"
+                  color="#001b3b"
                   class="resume"
                   type="submit"
                   >Send</v-btn
@@ -45,7 +45,7 @@
                 <a
                   href="https://www.linkedin.com/in/v%C3%A1ntsa-alp%C3%A1r-a6705a1b3/"
                   target="_blank"
-                  ><v-icon size="4rem" color="#034f20">mdi-linkedin</v-icon></a
+                  ><v-icon size="4rem" color="#001b3b">mdi-linkedin</v-icon></a
                 >
               </v-col>
             </v-row>
@@ -138,14 +138,13 @@ export default {
 <style scoped>
 .main {
   width: 100%;
-  background-color: #ede7dc;
 }
 h3 {
   text-align: center;
   font-family: TitilliumWeb-Black;
   font-size: 5rem;
   padding: 5%;
-  color: #034f20;
+  color: #001b3b;
 }
 img {
   width: 100%;
@@ -166,16 +165,12 @@ img {
   padding: 2rem;
   padding-bottom: 7rem;
 }
-.v-card{
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
 .v-btn:hover {
   transform: translateY(-4px);
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
 }
 h4 {
-  color: #034f20;
+  color: #001b3b;
   font-family: TitilliumWeb-Black;
   padding-top: 15%;
   text-align: center;

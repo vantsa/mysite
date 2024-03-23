@@ -2,7 +2,6 @@
   <div class="main">
     <v-row no-gutters> 
       <v-col cols="12" md="6" sm="12">
-        <v-img class="lights" src="../assets/lights.png"/>
         <div class="slide-in-container" ref="slideInContainer">
         <h3>About</h3>
         <div class="abouttext">
@@ -79,23 +78,13 @@ export default {
 <style scoped>
 .main {
   width: 100%;
-  background-color: #034f20;
-  position: relative;
 }
 h3 {
-  position:relative;
-  z-index: 1;
   text-align: center;
   font-family: TitilliumWeb-Black;
   font-size: 5rem;
   padding: 12%;
-  color: #ede7dc;
-}
-.lights{
-  position: absolute;
-  z-index: 1;
-  width: 50%;
-  mask-image: linear-gradient(to top, transparent,   rgba(0, 0, 0, 0.9)); /* Apply a gradient mask */
+  color: #001B3B;
 }
 .abouttext {
   width: 70%;
@@ -106,8 +95,6 @@ img{
   box-shadow: -20px 0px 65px 0px rgba(0, 0, 0, 0.74);
 }
 p{
-  position: relative;
-  z-index: 1;
   text-align: justify;
   margin-top: -2%;
   line-height: 1.8rem;
@@ -115,7 +102,7 @@ p{
   font-weight: 600;
   font-size: 1.1rem;
   letter-spacing: 1px;
-  color: #ede7dc;
+  color: #001B3B;
 }
 p::first-letter{
   margin-left: 10%;
@@ -139,9 +126,6 @@ p::first-letter{
   .signature{
     margin-bottom: 10%;
   }
-  .lights{
-    width: 100%;
-  }
   img{
     width: 80%;
   }
@@ -151,7 +135,7 @@ p::first-letter{
 }
 @media screen and (max-width: 600px){
   h3{
-    font-size: 4rem;
+    font-size:4rem;
   }
   p{
     font-size: 0.9rem;

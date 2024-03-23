@@ -1,6 +1,5 @@
 <template>
   <div class="bg">
-    <v-img class="lights" src="../assets/lights.png"/>
     <div class="content">
       <div  class="slide-in-container" ref="slideInContainer">
         <h4>CHECK OUT MY PROJECTS</h4>
@@ -37,13 +36,6 @@
               <p><strong>Advent Of Code 2022 </strong><br />JavaScript (in progress)</p>
             </div>
           </v-col>
-          <v-col cols="12" md="4" sm="6" align="center" @click="openMMM">
-            <div class="box">
-              <img class="mmm" src="../assets/mm.png" />
-              <p><strong>My Money Mate </strong><br />React.js</p>
-            </div>
-          </v-col>
-          
         </v-row>
         </div>
     </div>
@@ -87,9 +79,6 @@ export default {
     },
     openWFF() {
       window.open("https://github.com/vantsa/warriorff");
-    },
-    openMMM() {
-      window.open("https://vantsa-budget.netlify.app/");
     }
   },
 };
@@ -98,20 +87,13 @@ export default {
 <style scoped>
 .bg {
   width: 100%;
-  background-color: #034f20;
-  position:relative;
+  background-color: #001b3b;
 }
 .content {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 7%;
   padding-top: 3%;
-}
-.lights{
-  position: absolute;
-  z-index: 0;
-  width: 100%;
-  mask-image: linear-gradient(to top, transparent,   rgba(0, 0, 0, 0.9)); /* Apply a gradient mask */
 }
 .box {
   transition: transform 1s ease;
@@ -120,18 +102,14 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position:relative;
-  z-index: 2;
 }
 h4 {
-  color: #ede7dc;
+  color: white;
   font-family: Titilliumweb-Black;
   letter-spacing: 5px;
   font-size: 2.5rem;
   text-align: center;
   padding-top: 6%;
-  position: relative;
-  z-index: 2;
 }
 .st {
   padding-top: 0.5%;
@@ -152,12 +130,8 @@ img {
   width: 40%;
   height: auto;
 }
-.mmm{
-  height: auto;
-  width: 87%;
-}
 p {
-  color: #ede7dc;
+  color: white;
   text-align: center;
   font-family: TitilliumWeb-Light;
   letter-spacing: 4px;
@@ -200,9 +174,6 @@ p {
   }
   .aoc{
     width: 60%;
-  }
-  .mmm{
-    width: 62%;
   }
 }
 @media screen and (max-width: 500px){
