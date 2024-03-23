@@ -1,7 +1,7 @@
 <template>
   <div class="bg">
     <div class="content">
-      <p class="name">JUNIOR SOFTWARE DEVELOPER</p>
+      <p class="name">JUNIOR FULLSTACK DEVELOPER</p>
       <p class="self">VÁNTSA</p>
       <p class="self">ALPÁR</p>
     </div>
