@@ -44,7 +44,7 @@
         </div>
       </v-col>
       <v-col cols="12" md="6" sm="12" align-self="center" align="center">
-        <img src="../assets/vantsa.png" />
+        <img src="../assets/vantsaa.jpg" />
       </v-col>
     </v-row>
   </div>
