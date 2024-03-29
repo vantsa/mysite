@@ -3,7 +3,7 @@
         <div class="content">
             <v-row no-gutters>
                 <v-col class="center">
-                    <h4>Copyright ©2023<br>All rights reserved.</h4>
+                    <h4>Copyright ©2024<br>All rights reserved.</h4>
                 </v-col>
                 <v-col align="right">
                     <h4 class="contact">Contact</h4>

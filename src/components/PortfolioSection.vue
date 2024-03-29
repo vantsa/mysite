@@ -78,7 +78,7 @@ export default {
       window.open("https://github.com/vantsa/adventofcode22.git");
     },
     openWFF() {
-      window.open("https://github.com/vantsa/warriorff");
+      window.open("https://github.com/vantsa");
     }
   },
 };
